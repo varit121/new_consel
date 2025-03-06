@@ -1,9 +1,9 @@
 from django.db import models
 
-class City:
+class City(models.Model):  
     name = models.TextField()
     latitude = models.FloatField()
-    logitute = models.FloatField()
+    longitude = models.FloatField()  
     founded = models.DateField()
 
 class Tag(models.Model):
